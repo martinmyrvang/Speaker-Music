@@ -93,7 +93,7 @@ NOTE_C4, NOTE_AS4, END
 };
 
  
-// Tonernas längd nedan
+// Tonernas längd nedan!
 
 int noteDurations[] = {       
 8,10,4,4,
