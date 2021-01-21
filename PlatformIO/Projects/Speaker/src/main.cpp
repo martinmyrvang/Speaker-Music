@@ -1,7 +1,7 @@
 #include <Arduino.h>
 #include "pitches.h"
 
-
+// Toner nedan
 
 int melody[] = {
 
@@ -93,6 +93,8 @@ NOTE_C4, NOTE_AS4, END
 };
 
  
+// Tonernas längd nedan
+
 int noteDurations[] = {       
 8,10,4,4,
 
