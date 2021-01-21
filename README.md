@@ -15,6 +15,7 @@ is mainly because of safety reasons, but generally it controls the voltage in th
 and the GND is the exit. In order for the circuit to flow, an entrance and an exit is necessary. The electrons need to have somewhere to go.
 
 
+![46D228B8-6BFE-4320-B3D2-3F8C6A4A02F6_1_105_c](https://user-images.githubusercontent.com/57347172/105273825-512f1d00-5b9c-11eb-9bb0-afcf5ca49678.jpeg)
 
 
 ## THE CODE
