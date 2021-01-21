@@ -4,62 +4,183 @@
 
 
 int melody[] = {
-NOTE_D4, NOTE_G4, NOTE_FS4, NOTE_A4,
-NOTE_G4, NOTE_C5, NOTE_AS4, NOTE_A4,                   
-NOTE_FS4, NOTE_G4, NOTE_A4, NOTE_FS4, NOTE_DS4, NOTE_D4,
-NOTE_C4, NOTE_D4,0,                                 
 
-NOTE_D4, NOTE_G4, NOTE_FS4, NOTE_A4,
-NOTE_G4, NOTE_C5, NOTE_D5, NOTE_C5, NOTE_AS4, NOTE_C5, NOTE_AS4, NOTE_A4,      //29               //8
-NOTE_FS4, NOTE_G4, NOTE_A4, NOTE_FS4, NOTE_DS4, NOTE_D4,
-NOTE_C4, NOTE_D4,0,                                       
 
-NOTE_D4, NOTE_FS4, NOTE_G4, NOTE_A4, NOTE_DS5, NOTE_D5,
-NOTE_C5, NOTE_AS4, NOTE_A4, NOTE_C5,
-NOTE_C4, NOTE_D4, NOTE_DS4, NOTE_FS4, NOTE_D5, NOTE_C5,
-NOTE_AS4, NOTE_A4, NOTE_C5, NOTE_AS4,             //58
+NOTE_D4, NOTE_D4, NOTE_AS4, NOTE_AS4,
 
-NOTE_D4, NOTE_FS4, NOTE_G4, NOTE_A4, NOTE_DS5, NOTE_D5,
-NOTE_C5, NOTE_D5, NOTE_C5, NOTE_AS4, NOTE_C5, NOTE_AS4, NOTE_A4, NOTE_C5, NOTE_G4,
-NOTE_A4, 0, NOTE_AS4, NOTE_A4, 0, NOTE_G4,
-NOTE_G4, NOTE_A4, NOTE_G4, NOTE_FS4, 0,
 
-NOTE_C4, NOTE_D4, NOTE_G4, NOTE_FS4, NOTE_DS4,
-NOTE_C4, NOTE_D4, 0,
-NOTE_C4, NOTE_D4, NOTE_G4, NOTE_FS4, NOTE_DS4,
-NOTE_C4, NOTE_D4, 0
+NOTE_AS4, NOTE_C4, NOTE_D4, NOTE_D4,
+
+
+NOTE_C4, NOTE_AS4, NOTE_A4, NOTE_C4,
+
+
+NOTE_C4, NOTE_A4, NOTE_AS4, NOTE_C4,
+
+
+NOTE_A4, NOTE_D4, NOTE_AS4, NOTE_G4,
+
+
+NOTE_F4, NOTE_F4, NOTE_AS4, NOTE_AS4,
+
+
+NOTE_C4, NOTE_A4, NOTE_A4, NOTE_AS4,
+
+
+NOTE_G4, NOTE_F4, NOTE_G4, NOTE_A4,
+
+
+NOTE_F4, NOTE_F4, NOTE_AS4, NOTE_A4,
+
+
+NOTE_AS4, NOTE_C4, NOTE_D4, NOTE_AS4,
+
+
+NOTE_DS4, NOTE_D4, NOTE_C4, NOTE_AS4,
+
+
+NOTE_F4, NOTE_AS4, NOTE_A4, NOTE_AS4,
+
+
+NOTE_C4, NOTE_D4, NOTE_AS4, NOTE_DS4,
+
+
+NOTE_D4, NOTE_C4, NOTE_AS4, NOTE_D4,
+
+
+NOTE_D4, NOTE_AS4, NOTE_AS4, NOTE_AS4,
+
+
+NOTE_C4, NOTE_D4, NOTE_D4, NOTE_C4,
+
+
+NOTE_AS4, NOTE_A4, NOTE_C4, NOTE_C4,
+
+
+NOTE_A4, NOTE_AS4, NOTE_C4, NOTE_A4,
+
+
+NOTE_D4, NOTE_AS4, NOTE_G4, NOTE_F4,
+
+
+NOTE_F4, NOTE_AS4, NOTE_AS4, NOTE_C4,
+
+
+NOTE_A4, NOTE_A4, NOTE_AS4, NOTE_G4,
+
+
+NOTE_F4, NOTE_G4, NOTE_A4, NOTE_F4,
+
+
+NOTE_F4, NOTE_AS4, NOTE_A4, NOTE_AS4,
+
+
+NOTE_C4, NOTE_D4, NOTE_AS4, NOTE_DS4,
+
+
+NOTE_D4, NOTE_C4, NOTE_AS4, NOTE_F4,
+
+
+NOTE_AS4, NOTE_A4, NOTE_AS4, NOTE_C4,
+
+
+NOTE_D4, NOTE_AS4, NOTE_DS4, NOTE_D4,
+
+
+NOTE_C4, NOTE_AS4, END
+
 
 };
 
-// note durations: 8 = quarter note, 4 = 8th note, etc.
-int noteDurations[] = {       //duration of the notes
-8,4,8,4,
-4,4,4,12,
-4,4,4,4,4,4,
-4,16,4,
+ 
+int noteDurations[] = {       
+8,10,4,4,
 
-8,4,8,4,
-4,2,1,1,2,1,1,12,
-4,4,4,4,4,4,
-4,16,4,
 
-4,4,4,4,4,4,
-4,4,4,12,
-4,4,4,4,4,4,
-4,4,4,12,
+6,8,5,10,
 
-4,4,4,4,4,4,
-2,1,1,2,1,1,4,8,4,
-2,6,4,2,6,4,
-2,1,1,16,4,
 
-4,8,4,4,4,
-4,16,4,
-4,8,4,4,4,
-4,20,
+5,5,12,5,
+
+
+8,5,5,5,
+
+
+5,6,3,10,
+
+
+10,4,10,4,
+
+
+4,10,4,3,
+
+
+5,3,4,4, 
+
+
+8,3,4,3,
+
+
+4,4,4,4,
+
+
+4,4,10,7,
+
+
+4,5,4,4,
+
+
+4,4,4,4,
+
+
+4,10,8,4,
+
+
+5,4,4,6,
+
+
+3,3,5,3,
+
+
+3,6,3,5,
+
+
+3,3,3,3,
+
+
+4,2,8,6,
+
+
+3,5,3,3,
+
+
+5,3,3,4,
+
+
+2,3,3,6,
+
+
+3,4,2,3,
+
+
+3,3,3,3,
+
+
+2,8,8,3,
+
+
+4,2,3,3,
+
+
+3,3,3,2,
+
+
+8,8,
+
+
 };
 
-int speed=90;  //higher value, slower notes
+int speed=80;  
 
 
 void setup() {
@@ -79,5 +200,5 @@ noTone(3);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  
 }
